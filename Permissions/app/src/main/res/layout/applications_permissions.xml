@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView android:id="@+id/PackageName"
+            android:layout_width="wrap_content"
+            android:gravity="left"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal">
+
+        <ImageView android:id="@android:id/icon"
+            android:layout_width="@android:dimen/app_icon_size"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="14dip"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="50px"/>
+
+        <TextView android:id="@+id/curAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"/>
+
+        <ImageButton android:id="@+id/application_detail_manage_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_alignParentRight="true" />
+
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView android:id="@+id/packagea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView android:id="@+id/curAppversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginTop="15dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000000">
+    </LinearLayout>
+    <TextView android:id="@+id/iff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="App 의 요구 권한입니다." />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+    <ExpandableListView android:id="@+id/permissionList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:dividerHeight="1dp"
+        android:divider="#000000"
+        android:groupIndicator="@null"/>
+
+
+
+
+</LinearLayout>
